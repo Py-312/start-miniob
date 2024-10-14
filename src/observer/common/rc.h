@@ -22,7 +22,7 @@ See the Mulan PSL v2 for more details. */
 #define DEFINE_RCS                       \
   DEFINE_RC(SUCCESS)                     \
   DEFINE_RC(INVALID_ARGUMENT)            \
-  DEFINE_RC(UNIMPLENMENT)                \
+  DEFINE_RC(UNIMPLEMENTED)               \
   DEFINE_RC(SQL_SYNTAX)                  \
   DEFINE_RC(INTERNAL)                    \
   DEFINE_RC(NOMEM)                       \
@@ -59,6 +59,7 @@ See the Mulan PSL v2 for more details. */
   DEFINE_RC(IOERR_SEEK)                  \
   DEFINE_RC(IOERR_TOO_LONG)              \
   DEFINE_RC(IOERR_SYNC)                  \
+  DEFINE_RC(IOERR_UNLINK)                \
   DEFINE_RC(LOCKED_UNLOCK)               \
   DEFINE_RC(LOCKED_NEED_WAIT)            \
   DEFINE_RC(LOCKED_CONCURRENCY_CONFLICT) \
@@ -75,7 +76,8 @@ See the Mulan PSL v2 for more details. */
   DEFINE_RC(VARIABLE_NOT_VALID)          \
   DEFINE_RC(LOGBUF_FULL)                 \
   DEFINE_RC(LOG_FILE_FULL)               \
-  DEFINE_RC(LOG_ENTRY_INVALID)
+  DEFINE_RC(LOG_ENTRY_INVALID)           \
+  DEFINE_RC(UNSUPPORTED)
 
 enum class RC
 {
